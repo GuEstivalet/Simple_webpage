@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilização do header: */
+
+header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 0 10rem;
+    border-bottom: 3px solid black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    background-color: #3785bb;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header a:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+/* Estilização da section-hero: */
+
+#sec-hero {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12vh 10vw 5vh 10vw;
+    gap: 2rem;
+    border-bottom: 1px solid black;
+}
+
+#sec-hero img {
+    max-width: 40%;
+    height: auto;
+}
+
+#sec-hero div {
+    flex: 1;
+}
+
+#sec-hero h1 {
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+}
+
+#sec-hero h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+
+}
+
+#sec-hero a {
+    text-decoration: none;
+    color: black;
+    background-color: #3785bb;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#sec-hero a:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+/* Estilização da section 01: */
+
+#sec-01 {
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 9vw;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.obj-sec01 {
+    flex: 1 1 300px;
+    background-color: #e8e5da;
+    border-radius: 40px;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding: 2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.obj-sec01 h3 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.obj-sec01 p {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.obj-sec01:hover {
+    background-color: #48639c;
+    color: white;
+}
+
+/* Estilização da section 02: */
+
+#sec-02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh 10vw;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    margin: 1rem;
+}
+
+#aboutus {
+    max-width: 800px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+#aboutus h5 {
+    font-size: 2rem;
+    color: #3785bb;
+    margin-bottom: 1rem;
+}
+
+#aboutus p{
+    margin: 2rem;
+}
+
+#sec-02 a {
+    text-decoration: none;
+    padding: 2rem 4rem;
+    font-size: 2rem;
+    color: black;
+    background-color: #3785bb;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    margin-top: 3rem;
+}
+
+#sec-02 a:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+#img-aboutus {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* Estilização do footer */
+
+footer {
+    padding: 2rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer h4 {
+    font-size: 1.25rem;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+footer a:hover {
+    background-color: white;
+    color: black;
+}
+
+#ic-pay i{
+    margin: 0.75vw;
+}
+
+#ic-ct i{
+    margin: 1vw;
+}
+
+#ic-aloc div p{
+    margin: 0.8rem;
+}
+
+#ic-ct_d h4 {
+    margin: 0.8rem;
+}
+
+#ic-sm_d h4 {
+    margin: 0.8rem;
+}
+
+#ic-pay_d h4 {
+    margin: 0.8rem;
+}
+
+/* Design responsivo para celulares: */
+
+@media screen and (max-width: 1024px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    #sec-hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 15vh;
+    }
+
+    #sec-hero img {
+        max-width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    #sec-01 {
+        flex-direction: column;
+        align-items: center;
+        padding: 5vh 5vw;
+    }
+
+    #sec-02 {
+        padding: 5vh 5vw;
+        margin: 3vw;
+        text-align: left;
+    }
+
+    #aboutus p{
+        margin: 1rem;
+    }
+
+    .obj-sec01 {
+        padding: 1rem;
+    }
+
+@media (min-width:769px), (max-width:1023){
+    #sec-01 {
+        padding: 5vh 3vw;
+    }
+
+    #aboutus p{
+        margin: 1rem;
+    }
+    
+    .obj-sec01 {
+        padding: 3rem;
+        max-height: 20rem;
+        max-width: 100%;
+    }
+
+    #ic-ct i {
+        margin: 3vw;
+    }
+
+    #ic-pay i {
+        margin: 3vw;
+    }
+
+    footer {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    #ic-ct_d p{
+        margin: 1rem;
+    }
+
+    #ic-sm i {
+        margin: 3vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header a {
+        font-size: 0.8rem;
+    }
+
+    #sec-hero h1 {
+        font-size: 3rem;
+    }
+
+    #sec-hero a {
+        font-size: 1em;
+        padding: 0.75rem 1.5rem;
+    }
+
+    #sec-01 {
+        padding: 5vh 3vw;
+    }
+
+    .obj-sec01 {
+        padding: 3rem;
+        max-height: 20rem;
+    }
+
+    #sec-02 {
+        margin: 3vw;
+        text-align: left;
+    }
+
+    #sec-02 a {
+        font-size: 2rem;
+        padding: 0.5rem 1rem;
+    }
+
+    #aboutus p{
+        margin: 1rem;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer h4 {
+        margin-bottom: 1rem;
+    }
+
+    #ic-ct i {
+        margin: 1vw;
+
+    }
+
+    #ic-pay i {
+        margin: 1vw;
+    }
+
+    #ic-sm i {
+        margin: 1vw;
+    } 
+    }
+}
